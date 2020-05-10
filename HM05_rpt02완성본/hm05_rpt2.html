@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>hm05: 과제02</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .header {
+        width: 100%;
+        height: 10%;
+        background: white;
+      }
+      .nav {
+        width: 30%;
+        height: 80%;
+        float: left;
+        background: pink;
+      }
+      .section {
+        width: 70%;
+        height: 80%;
+        float: left;
+        background: rgb(218, 221, 60);
+      }
+      .aside {
+        width: 15%;
+        height: 70%;
+        float: left;
+        background: green;
+      }
+      .footer {
+        width: 100%;
+        height: 10%;
+        clear: both;
+        background: rgb(148, 42, 60);
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+      <h1><a href="https://github.com/nam0914">hm05남승현</a></h1>
+    </header>
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <h2>나의 일상과 좋아하는 것!!</h2>
+          <ul>
+            <hr />
+
+            <li>
+              <a href="나의일상.html" target="myframe">나의 일상</a>
+            </li>
+            <li>
+              <a href="좋아하는배우.html" target="myframe">좋아하는 연예인</a>
+            </li>
+            <li>
+              <a href="띵작영화.html" target="myframe">좋아하는 영화</a>
+            </li>
+            <li>
+              <a href="인생드라마.html" target="myframe">좋아하는 드라마</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>크리스마스</h2>
+          <ul>
+            <li>
+              <a href="hm05_card.html" target="myframe"
+                >hm05 크리스마스초대장</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2>동아리</h2>
+          <ul>
+            <li>
+              <a href="음악동아리소개.html" target="myframe">동아리 소개</a>
+            </li>
+            <li>
+              <a href="음악동아리모집.html" target="myframe">동아리 모집</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="section" id="main">
+      <article>
+        <iframe src="나의일상.html" name="myframe" width="770" height="580">
+        </iframe>
+      </article>
+    </section>
+
+    <footer class="footer"></footer>
+  </body>
+</html>
