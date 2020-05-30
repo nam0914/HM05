@@ -1,0 +1,43 @@
+<head>
+  <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+  <meta charset="utf-8" />
+  <title>hm05 : Javascript object</title>
+  <style></style>
+  <script>
+    var student = {
+      id: "hm05",
+      name: "남승현",
+      phone: "010 - 4124 - 1949",
+      balance: 35000,
+      acount:"41391041398307",
+      major:"드론iot시뮬레이션학부",
+      age: "21",
+
+
+        inquiry: function() { return this.balance; },
+        deposit: function(money) { this.balance += money; } 
+    };
+  </script>
+</head>
+
+<body>
+  <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+  <h3>student 객체 리터럴 표기 방식출력</h3>
+  <hr />
+  <script>
+    document.write("student : ");
+    document.write(student.id + ", ");
+    document.write(student.name + ", ");
+    document.write(student.age + ", ");
+    document.write(student.major + ", ");
+    document.write(student.phone + "<br><hr> ");
+    document.write(student.balance + "<br>");
+
+    student.deposit(50000);
+    document.write("용돈으로 받은 50000원 입금 후 잔액은 " + student.inquiry() + "<br><hr>");
+    student.deposit(300000);
+    document.write("장학금으로 300000원 입금 후 잔액은 " + student.inquiry() + "<br><hr>");
+
+  </script>
+</body>
+</html>
