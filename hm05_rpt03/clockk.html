@@ -1,0 +1,192 @@
+<html>
+    <head>
+        <style>
+            .body,.inner{
+                width: 160px;
+                height: 370px;
+                background: #B2EBF4;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 100px;
+            }
+              .inner{
+                  width: 120px;
+                height: 170px;
+                background: white;
+                border:7px solid gray;
+                top:155;
+               
+                
+            }
+            .clock{
+                width: 125px;
+                height: 125px;
+                background: white;
+                border-radius: 50%;
+                border:7px solid gray;
+                position: absolute;
+                margin: auto;
+                top:-200px;
+                left: 0;
+                right: 0;
+                bottom:0;
+                
+            }
+            .line,.line2,.line3,.line4,.line5,.line6{
+                width: 6px;
+                height: 126px;
+                background: gray;
+                position: absolute;
+                margin: auto;
+                top: -200;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+            }
+            .line2{
+                top:1;
+                transform: rotate(90deg);
+            }
+            .line3,.line4,.line5,.line6 {
+                top: 1;
+                width: 1px;
+                transform: rotate(30deg);
+            }
+            .line4 {
+                transform: rotate(-30deg);
+             
+            }
+            .line5{
+                transform: rotate(60deg);
+             
+            }
+            .line6{
+                transform: rotate(-60deg);
+             
+            }
+            .small{
+                width: 105px;
+                height: 105px;
+                background: white;
+                border-radius: 50%;
+                position: absolute;
+                margin: auto;
+                top: -200;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+            }
+            .hour,.minute,.second{
+                width: 8px;
+                height: 35px;
+                background: #f8b65b;
+                border-radius: 50px;
+                position: absolute;
+                margin: auto;
+                top: -200;
+                left: -30;
+                right: 0;
+                bottom: 0;
+                transform: rotate(240deg);
+            }
+            .hour{
+                right:-55;
+                bottom:15;
+            }
+            .minute,.second{
+                height: 50px;
+                top: -250;
+                left: 0;
+                transform: none;
+                transform-origin: bottom;
+                animation: tick-tock 3600s steps(60,end) infinite;
+            }
+            .second{
+                 width: 2px;
+                background: black;
+                 animation: tick-tock 60s steps(60,end) infinite;
+            }
+            
+            @keyframes tick-tock {
+                to
+                {
+                    transform: rotate(360deg);
+                }
+            }
+               
+            .point{
+                 width: 16px;
+                height: 16px;
+                background: #ed6e46;
+                border-radius: 50%;
+                position: absolute;
+                margin: auto;
+                top: -200;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                
+                
+            }
+            .stick{
+                width: 10px;
+                height: 140px;
+                background: gray;
+                border-radius: 50px;
+                transform-origin: top;
+                position: absolute;
+                margin: auto;
+                top: 112;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                animation: tick 1s linear alternate infinite;
+            }
+            .drum{
+                width: 25px;
+                height: 25px;
+                background: #ed6e46;
+                border-radius:50%;
+                position: absolute;
+                margin: auto;
+                top: 140;
+                left: -7;
+                right: 0;
+                bottom: 0;
+        
+            }
+            @keyframes tick{
+                0%{transform: rotate(-16deg);}
+                100%{transform: rotate(16deg);}
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div class="body"></div>
+        <div class="clock"></div>
+        <div class="line">
+        <div class="line2"></div>
+        <div class="line3"></div>
+        <div class="line4"></div>
+        <div class="line5"></div>
+        <div class="line6"></div>
+        </div>
+        <div class="small"></div>
+        <div class="hour"></div>
+        <div class="minute"></div>
+        <div class="second"></div>
+        <div class="point"></div>
+        <div class="inner"></div>
+        <div class="stick">
+        <div class="drum"></div>
+        </div>
+    </body>
+</html>
